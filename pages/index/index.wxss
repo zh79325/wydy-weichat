@@ -1,0 +1,49 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 10px;
+}
+
+.movie-input{
+margin-top: 10px;
+}
+
+.help-footer{
+  position:absolute;
+  bottom:15px;
+}
+.tooltip{
+  color: #a94442;
+}
+.tooltip-icon{
+  margin-top:2px;
+}
+
+.processing{
+animation: loaderAnim 1s infinite;
+}
+
+@keyframes loaderAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

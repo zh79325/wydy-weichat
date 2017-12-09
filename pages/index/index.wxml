@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="section movie-input">
+    <!-- <view class="section__title">你输入的是：{{inputValue}}</view> -->
+    <input bindinput="bindKeyInput" placeholder="输入关键字如:战狼2" />
+    <button bindtap="search">
+      <icon wx:if="{{!processing}}" class='tooltip-icon' type="search" size="20" /> 
+      <spinner wx:if="{{processing}}" class='tooltip-icon processing' type="waiting" size="20" /> 
+      搜索
+    </button>
+  </view>
+  <view class="tooltip" wx:if="{{tooltip}}">
+    <icon class='tooltip-icon' type="warn" size="20" />
+    <text class="tooltip">{{tooltip}}</text>
+  </view>
+  <view class="section help-footer">
+    <button open-type="contact">联系客服</button>
+  </view>
+</view>

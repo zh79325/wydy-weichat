@@ -1,0 +1,45 @@
+/* pages/queryList.wxss */
+
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 10px;
+}
+
+.movie-avatar {
+  min-width: 200rpx;
+  min-height: 200rpx;
+  max-width: 200rpx;
+  max-height: 200rpx;
+  flex-grow: 1;
+  margin-left: 20rpx;
+}
+
+.movie-info {
+  padding-left: 20rpx;
+   max-height: 200rpx;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background: #8e569e;
+}
+
+.flex-view-item-2 {
+  color: snow;
+  background: #e4803a;
+  padding: 8rpx;
+  margin-right: 10rpx;
+  margin-top: 5rpx;
+}
+.movie-text{
+ overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size:18px;
+}

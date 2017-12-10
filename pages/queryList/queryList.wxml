@@ -1,0 +1,17 @@
+<block wx:for="{{result.movies}}" wx:key="unique">
+
+  <view class="movie-container">
+
+    <image class="flex-view-item movie-avatar" src="{{item.image}}" background-size="cover"></image>
+
+    <view class="flex-view-item movie-info">
+      <view class='movie-text'>片名:{{item.name}}</view>
+      <view class='movie-text'>类型:{{item.types}}</view>
+      <view class='movie-text'>上映:{{item.playDay}}</view>
+      <view class='movie-text'>主演:{{item.actors}}</view>
+
+
+
+    </view>
+  </view>
+</block>

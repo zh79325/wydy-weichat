@@ -1,5 +1,6 @@
 {
   "usingComponents":{
     "spinner":"../../components/spinner/spinner"
-  }
+  },
+  "navigationBarTitleText":"影片搜索"
 }
